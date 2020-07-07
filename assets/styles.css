@@ -1,0 +1,37 @@
+body{
+    background: white;
+    margin: 0 0 0 0;
+    -webkit-print-color-adjust: exact !important;
+}
+
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.page{
+    background: white;
+    display: block;
+    width: 215.9mm; /* Defines the width of the respective static page */
+    height: 279.4mm; /* Defines the height of the respective static page*/
+    padding: 8mm 13mm 15mm 28mm; /* Defines the page margins */
+    margin: 0 auto;
+    margin-bottom: 5mm;
+    box-shadow: 0 0 5mm rgba(0,0,0, 0.6);
+}
+
+@media print{
+    body{
+    margin: 0;
+    box_shadow: none;
+    }
+
+    .page{
+    margin: 0;
+    border: initial;
+    border-radius: initial;
+    width: initial;
+    box-shadow: initial;
+    background: initial;
+    }
+}
